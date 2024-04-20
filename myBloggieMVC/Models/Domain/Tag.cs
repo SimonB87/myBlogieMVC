@@ -1,4 +1,4 @@
-﻿namespace myBlogieMVC.Models.Domain
+﻿namespace myBloggieMVC.Models.Domain
 {
 	public class Tag
 	{

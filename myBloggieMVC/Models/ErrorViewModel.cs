@@ -1,4 +1,4 @@
-namespace myBlogieMVC.Models
+namespace myBloggieMVC.Models
 {
 	public class ErrorViewModel
 	{

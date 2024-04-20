@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using myBlogieMVC.Models;
+using myBloggieMVC.Models;
 using System.Diagnostics;
 
-namespace myBlogieMVC.Controllers
+namespace myBloggieMVC.Controllers
 {
 	public class HomeController : Controller
 	{
