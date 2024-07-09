@@ -35,6 +35,15 @@ namespace myBloggieMVC.Controllers
             bloggieDbContext.SaveChanges(); // to save data to DB
 
 			return View("Add"); //return view
-        } 
+        }
+
+        [HttpGet]
+        public IActionResult List() {
+            // use DB Context to read Tags
+            var tags = bloggieDbContext.Tags.ToList(); //all tags are in variable "tags" 
+
+
+			return View(tags);
+        }
     }
 }
