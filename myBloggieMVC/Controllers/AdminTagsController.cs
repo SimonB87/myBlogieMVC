@@ -34,10 +34,11 @@ namespace myBloggieMVC.Controllers
             bloggieDbContext.Tags.Add(tag);
             bloggieDbContext.SaveChanges(); // to save data to DB
 
-			return View("Add"); //return view
+            return RedirectToAction("List"); 
         }
 
         [HttpGet]
+        [ActionName("List")]
         public IActionResult List() {
             // use DB Context to read Tags
             var tags = bloggieDbContext.Tags.ToList(); //all tags are in variable "tags" 
