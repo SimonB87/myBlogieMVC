@@ -1,6 +1,6 @@
-﻿using myBloggieMVC.Models.Domain;
+﻿using myBloggie.Web.Models.Domain;
 
-namespace myBloggieMVC.Repositories
+namespace myBloggie.Web.Repositories
 {
     public interface ITagInterface
     {
