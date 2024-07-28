@@ -2,7 +2,7 @@
 
 namespace myBloggieMVC.Repositories
 {
-    public interface ITagInterface
+    public interface ITagRespository
     {
         // here is definition of the methods inside iterface
         Task<IEnumerable<Tag>> GetAllAsync(); // Get All Tags
@@ -13,6 +13,6 @@ namespace myBloggieMVC.Repositories
 
         Task<Tag?> UpdateAsync(Tag tag); // Update Tag, "Tag?" means it can be type Tag or null
 
-        Task<Tag?> DeleteAsync(Tag tag); // "Tag?" means it can be type Tag or null. If method doesn't find Tag, it will return null instead.
+        Task<Tag?> DeleteAsync(Guid id); // "Tag?" means it can be type Tag or null. If method doesn't find Tag, it will return null instead.
     }
 }
