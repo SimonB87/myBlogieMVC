@@ -1,4 +1,6 @@
-﻿namespace myBloggieMVC.Models.Domain
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace myBloggieMVC.Models.Domain
 {
 	public class BlogPost
 	{
